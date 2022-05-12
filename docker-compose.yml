@@ -8,13 +8,13 @@ services:
       - DATABASE_DRIVER=mysql
       - DATABASE_ENCODING=utf8
       - SAMPLE_DATA_LENGTH=100
-      - DATABASE_HOST=host.docker.internal
+      - DATABASE_HOST=172.17.0.1
       - DATABASE_PORT=3306
       - DATABASE_NAME=compalex_dev
       - DATABASE_USER=root
       - DATABASE_PASSWORD=password
       - DATABASE_DESCRIPTION=Developer database
-      - DATABASE_HOST_SECONDARY=host.docker.internal
+      - DATABASE_HOST_SECONDARY=172.17.0.1
       - DATABASE_PORT_SECONDARY=3306
       - DATABASE_NAME_SECONDARY=compalex_prod
       - DATABASE_USER_SECONDARY=root
